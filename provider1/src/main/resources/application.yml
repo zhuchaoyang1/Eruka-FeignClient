@@ -1,0 +1,16 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: provider-test
+
+eureka:
+  instance:
+    #以IP地址注册到服务中心，相互注册使用IP地址
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    #eureka server注册中心的地址
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

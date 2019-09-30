@@ -1,0 +1,1 @@
+package com.example.feign.hystrix;import com.example.feign.net.NetFromEurka;import org.springframework.stereotype.Component;/** * 服务降级 * 需要手动的纳入IOC * @author 朱朝阳 * @date 2019/9/30 20:07 */@Componentpublic class NetHystrix implements NetFromEurka {    @Override    public String getTest(String name) {        return "网络发生错误，请求的参数为：" + name;    }}
