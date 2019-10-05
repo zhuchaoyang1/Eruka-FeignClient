@@ -8,5 +8,5 @@ https://blog.csdn.net/qq_35387940/article/details/94559369
 创建一个Provider：
 https://blog.csdn.net/qq_35387940/article/details/94562280
 
-创建一个：Consumer
+创建一个Consumer：
 https://blog.csdn.net/qq_35387940/article/details/94569189
